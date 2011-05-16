@@ -19,7 +19,7 @@ describe BooksController do
         end
 
         it "should redirect to the books list page" do
-            response.should redirect_to recipes_path
+            response.should redirect_to books_path
         end
     end
 

@@ -2,15 +2,15 @@
 <%= form_for @book do |f| %>
     <%= f.label :title %>
     <%= f.text_field :title %>
-
+<br />
     <%= f.label :author %>
     <%= f.text_field :author %>
-    
+<br />
     <%= f.label :year %>
     <%= f.number_field :year %>
-
+<br />
     <%= f.label :description%>
     <%= f.text_area :description%>
-
+<br />
     <%= f.submit "Create Book" %>
 <% end %>

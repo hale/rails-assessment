@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Search results
+</title>
+</head>
+<body>
+<h1>Search results</h1>
+<table border="1">
+<tr>
+<td width="40%"><p align="center"><i><b>Book</b></i></td>
+<td width="20%"><p align="center"><i><b>Year</b></i></td>
+</te>
+<% @books.each do |book| %>
+<tr>
+<td>
+<a href="
+<%=book.id%>
+">
+<%=book.title%>
+</a>
+</td>
+<td><%= book.year %></td>
+</tr>
+<% end %>
+</table>
+<p> <a href="/books/"> Back</a> </body>
+</html>
+
